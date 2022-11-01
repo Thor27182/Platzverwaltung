@@ -8,18 +8,19 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\florian.barth\\.nuget\\packages\\": {}
+    "C:\\packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Klasse IT204\\LF_12a - Kundenspezifische Anwendungsentwicklung durchführen\\Projekte\\Thore_Florian_Mandy\\repo\\UserInterface\\UserInterface.csproj",
+      "projectUniqueName": "H:\\vscode\\Schulprojekt\\Platzverwaltung\\UserInterface\\UserInterface.csproj",
       "projectName": "UserInterface",
-      "projectPath": "G:\\Klasse IT204\\LF_12a - Kundenspezifische Anwendungsentwicklung durchführen\\Projekte\\Thore_Florian_Mandy\\repo\\UserInterface\\UserInterface.csproj",
-      "packagesPath": "C:\\Users\\florian.barth\\.nuget\\packages\\",
-      "outputPath": "G:\\Klasse IT204\\LF_12a - Kundenspezifische Anwendungsentwicklung durchführen\\Projekte\\Thore_Florian_Mandy\\repo\\UserInterface\\obj\\",
+      "projectPath": "H:\\vscode\\Schulprojekt\\Platzverwaltung\\UserInterface\\UserInterface.csproj",
+      "packagesPath": "C:\\packages",
+      "outputPath": "H:\\vscode\\Schulprojekt\\Platzverwaltung\\UserInterface\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
+        "H:\\vscode\\NuGet.Config",
         "I:\\Remote.V2\\AppData\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [

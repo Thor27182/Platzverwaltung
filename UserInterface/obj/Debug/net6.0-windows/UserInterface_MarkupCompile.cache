@@ -1,20 +1,20 @@
 ﻿UserInterface
-
+1.0.0.0
 
 winexe
 C#
 .cs
-G:\Klasse IT204\LF_12a - Kundenspezifische Anwendungsentwicklung durchführen\Projekte\Thore_Florian_Mandy\repo\UserInterface\obj\Debug\net6.0-windows\
+h:\vscode\Schulprojekt\Platzverwaltung\UserInterface\obj\Debug\net6.0-windows\
 UserInterface
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-G:\Klasse IT204\LF_12a - Kundenspezifische Anwendungsentwicklung durchführen\Projekte\Thore_Florian_Mandy\repo\UserInterface\App.xaml
+h:\vscode\Schulprojekt\Platzverwaltung\UserInterface\App.xaml
 11407045341
 
-3-1233169557
+5-2102265037
 1941645785384
 MainWindow.xaml;
 
-False
+True
 
