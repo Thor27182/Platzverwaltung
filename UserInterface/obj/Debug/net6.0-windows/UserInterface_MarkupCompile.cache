@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-h:\vscode\Schulprojekt\Platzverwaltung\UserInterface\obj\Debug\net6.0-windows\
+h:\vscode_userdata\Demo_Solution\Schulprojekt\Platzverwaltung\UserInterface\obj\Debug\net6.0-windows\
 UserInterface
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-h:\vscode\Schulprojekt\Platzverwaltung\UserInterface\App.xaml
-11407045341
+h:\vscode_userdata\Demo_Solution\Schulprojekt\Platzverwaltung\UserInterface\App.xaml
+2-1907577260
 
-5-2102265037
-1941645785384
-MainWindow.xaml;
+6826750352
+194618410957
+MainWindow.xaml;RegistrationPage.xaml;
 
 True
 

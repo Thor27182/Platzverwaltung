@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="Platzverwaltungssystem" Height="450" Width="800">
     <Grid>
-        <Button Click="goToLogin">Login</Button>
+        <Button Click="goToLogin" Margin="148,89,148,99">Login</Button>
     </Grid>
 </Window>
