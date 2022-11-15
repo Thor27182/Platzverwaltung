@@ -6,9 +6,10 @@
       xmlns:local="clr-namespace:UserInterface"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="RegistrationPage" Margin="10,10,10,10">
+      Title="RegistrationPage" Margin="10,10,10,10"
+      FontFamily="Calibri" FontSize="20">
 
-    <Grid Background="Green">
+    <Grid Background="GreenYellow">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition/>
@@ -26,32 +27,35 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            <RowDefinition/>
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Button Click="returnToLogin" Grid.Row="8" Grid.Column="1">Zurück zum Login</Button>
+        <Label Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" FontSize="28" FontWeight="Bold">Deine Registrierung im Buchungsportal:</Label>
 
-        <Label Grid.Column="3" Grid.Row="5">Vorname:</Label>
-        <TextBox Name="firstnameInput" MaxLength="20" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="2">Vorname:</Label>
+        <TextBox Name="firstnameInput" Grid.Column="2" Grid.Row="2"/>
 
-        <Label Margin="62,120,487,213" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="3">Nachname:</Label>
-        <TextBox Name="lastnameInput" MaxLength="20" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="3">Nachname:</Label>
+        <TextBox Name="lastnameInput" Grid.Column="2" Grid.Row="3"/>
 
-        <Label Margin="101,51,289,225" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="2">Geburtsdatum:</Label>
-        <TextBox Name="birthdateInput" MaxLength="10" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="4">Geburtsdatum:</Label>
+        <TextBox Name="birthdateInput" Grid.Column="2" Grid.Row="4"/>
 
-        <Label Margin="297,312,35,38" Grid.RowSpan="2" Grid.Column="4">Adresse:</Label>
-        <TextBox Name="adressInput" MaxLength="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="5">Adresse:</Label>
+        <TextBox Name="adressInput" Grid.Column="2" Grid.Row="5"/>
 
-        <Label Margin="255,76,35,192" Grid.RowSpan="2" Grid.Column="4">E-Mail Adresse:</Label>
-        <TextBox Name="emailInput" MaxLength="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="6">E-Mail Adresse:</Label>
+        <TextBox Name="emailInput" Grid.Column="2" Grid.Row="6"/>
 
-        <Label Margin="324,21,10,319" Grid.RowSpan="2" Grid.Column="4">Benutzername</Label>
-        <TextBox Name="usernameInput" MaxLength="50" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="7">Benutzername:</Label>
+        <TextBox Name="usernameInput" Grid.Column="2" Grid.Row="7"/>
 
-        <Label Margin="130,312,309,38" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="3">Passwort</Label>
-        <PasswordBox Name="passwordInput" PasswordChar="*" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.RowSpan="2"/>
+        <Label Grid.Column="1" Grid.Row="8">Passwort:</Label>
+        <PasswordBox Name="passwordInput" Grid.Column="2" Grid.Row="8"/>
 
-        <Button Click="registerUser" Margin="336,312,35,59" Grid.RowSpan="2" Grid.Column="4">Registrieren</Button>
+        <Button Click="returnToLogin" Grid.Column="1" Grid.Row="9">Zurück zum Login</Button>
+        
+        <Button Click="registerUser" Grid.Column="3" Grid.Row="9" Grid.RowSpan="1" Background="ForestGreen">Registrieren</Button>
     </Grid>
 </Page>
