@@ -1,0 +1,61 @@
+﻿<Page x:Class="UserInterface.RegistrationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UserInterface"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistrationPage" Margin="10,10,10,10"
+      FontFamily="Calibri" FontSize="20">
+
+    <Grid Background="GreenYellow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" FontSize="28" FontWeight="Bold">Deine Registrierung im Buchungsportal:</Label>
+
+        <Label Grid.Column="1" Grid.Row="2">Vorname:</Label>
+        <TextBox Name="firstnameInput" Grid.Column="2" Grid.Row="2"/>
+
+        <Label Grid.Column="1" Grid.Row="3">Nachname:</Label>
+        <TextBox Name="lastnameInput" Grid.Column="2" Grid.Row="3"/>
+
+        <Label Grid.Column="1" Grid.Row="4">Geburtsdatum:</Label>
+        <TextBox Name="birthdateInput" Grid.Column="2" Grid.Row="4"/>
+
+        <Label Grid.Column="1" Grid.Row="5">Adresse:</Label>
+        <TextBox Name="adressInput" Grid.Column="2" Grid.Row="5"/>
+
+        <Label Grid.Column="1" Grid.Row="6">E-Mail Adresse:</Label>
+        <TextBox Name="emailInput" Grid.Column="2" Grid.Row="6"/>
+
+        <Label Grid.Column="1" Grid.Row="7">Benutzername:</Label>
+        <TextBox Name="usernameInput" Grid.Column="2" Grid.Row="7"/>
+
+        <Label Grid.Column="1" Grid.Row="8">Passwort:</Label>
+        <PasswordBox Name="passwordInput" Grid.Column="2" Grid.Row="8"/>
+
+        <Button Click="Button_Click" Grid.Column="1" Grid.Row="9">Zurück zum Login</Button>
+
+        <Button Click="Button_Click_1" Grid.Column="3" Grid.Row="9" Grid.RowSpan="1" Background="ForestGreen">Registrieren</Button>
+    </Grid>
+</Page>
