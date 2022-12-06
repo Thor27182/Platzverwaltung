@@ -26,11 +26,23 @@ namespace UserInterface
             DatePicker datePickerWithBlackoutDates = new DatePicker();
             var today = DateTime.Today;
 
-            datePickerWithBlackoutDates.DisplayDateStart = new DateTime(2020, 1, 1);
-            datePickerWithBlackoutDates.DisplayDateEnd = new DateTime(2020, 1, 31);
-            datePickerWithBlackoutDates.SelectedDate = today;
+            //datePickerWithBlackoutDates.DisplayDateStart = new DateTime(2020, 1, 1);
+            //datePickerWithBlackoutDates.DisplayDateEnd = new DateTime(2030, 1, 31);
+            //datePickerWithBlackoutDates.SelectedDate = today;
 
-            datePickerWithBlackoutDates.BlackoutDates.Add(new CalendarDateRange(new DateTime(2000, 1, 1), today));
+            //datePickerWithBlackoutDates.BlackoutDates.Add(new CalendarDateRange(new DateTime(2020, 1, 1), today));
+
+            for (int i = 4; i <= 12; i++)
+            {
+                for (int j = 4; j <= 7; j++)
+                {
+                    Button b = new Button();
+                    b.Content = string.Format("Row: {0}, Column: {1}", i, j);
+                    Grid.SetRow(b, i);
+                    Grid.SetColumn(b, j);
+                    grid.Children.Add(b);
+                }
+            }
         }
     }
 }

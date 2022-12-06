@@ -9,7 +9,7 @@
       Title="Home" Margin="10,10,10,10"
       FontFamily="Calibri" FontSize="20">
 
-    <Grid Background="YellowGreen">
+    <Grid Name="grid" Background="YellowGreen" HorizontalAlignment="Center">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="100"/>
@@ -59,5 +59,15 @@
             </DatePicker.BlackoutDates>
         </DatePicker>
 
+        <Label Grid.Column="3" Grid.Row="4" HorizontalAlignment="Right">10 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="8" HorizontalAlignment="Right">14 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="12" HorizontalAlignment="Right">18 Uhr</Label>
+
+        <Label Grid.Column="4" Grid.Row="3" Panel.ZIndex="1">Platz 1</Label>
+        <Label Grid.Column="5" Grid.Row="3" Panel.ZIndex="1">Platz 2</Label>
+        <Label Grid.Column="6" Grid.Row="3" Panel.ZIndex="1">Platz 3</Label>
+        <Label Grid.Column="7" Grid.Row="3" Panel.ZIndex="1">Platz 4</Label>
+
+        <Rectangle Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="3" Grid.RowSpan="10" Fill="AliceBlue"/>
     </Grid>
 </Page>

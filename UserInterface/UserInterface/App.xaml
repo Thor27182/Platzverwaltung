@@ -49,6 +49,15 @@
             <Setter Property="Background" Value="Gray"/>
             <Setter Property="BorderThickness" Value="1" />
             <Setter Property="BorderBrush" Value="Black" />
+            <Setter Property="Content" Value="Normal Button"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Content" Value="Hover Button"/>
+                </Trigger>
+                <Trigger Property="IsPressed" Value="True">
+                    <Setter Property="Content" Value="Pressed Button"/>
+                </Trigger>
+            </Style.Triggers>
         </Style>
 
         <Style TargetType="RowDefinition">

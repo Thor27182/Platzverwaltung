@@ -26,9 +26,9 @@ namespace UserInterface
 
         }
 
-        private void goToLogin(object sender, RoutedEventArgs e)
+        private void GoToLogin(object sender, RoutedEventArgs e)
         {
-            RegistrationPage rp = new RegistrationPage();
+            Home rp = new Home();
             this.Content = rp;
         }
     }
