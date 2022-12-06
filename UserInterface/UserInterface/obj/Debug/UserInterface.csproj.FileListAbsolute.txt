@@ -42,3 +42,13 @@ H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\UserInterface.c
 H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\UserInterface.csproj.CoreCompileInputs.cache
 H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\UserInterface.exe
 H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\UserInterface.pdb
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\Login.dll
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\Login.pdb
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\LoginPage.g.cs
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\LoginPage.baml
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\obj\Debug\UserInterface.csproj.CopyComplete
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\MySql.Data.dll
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\Google.Protobuf.dll
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\BouncyCastle.Crypto.dll
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\Renci.SshNet.dll
+H:\LF12\Projekt\Framework2\UserInterface\UserInterface\bin\Debug\MySql.Data.xml

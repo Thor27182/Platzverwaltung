@@ -4,12 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace Login
 {
     internal class Login
     {
 
+        public static bool DoLogin(string username, string hashedPassword) {
+            // Nur Rückgabe, wenn Username und gehashted Passwort passen
+            string sql = "SELECT * FROM users WHERE username = '" + username + "' AND password = '" + hashedPassword + "';";
+
+            // TODO: DB anbindung auslagern
+            MySqlConnection conn = new MySqlConnection();
+            // TODO: einbauen
+
+            bool found = true;
+
+            return found;
+        }
+
+        /*
         public bool DoLogin(string user, string password) {
 
             // Salt anhaengen
@@ -32,15 +48,16 @@ namespace Login
 
             return false;
         
-        }
+        }*/
 
+        /*
         private string GetSalt() {
             return "Qtd62";
         }
 
         private string AddSalt(string password) {
             return password + GetSalt();
-        }
+        }*/
 
     }
 }

@@ -8,5 +8,6 @@
         Title="Platzverwaltungssystem" Height="600" Width="900">
     <Grid>
         <Button Click="goToLogin">Login</Button>
+        <Frame x:Name="Main" />
     </Grid>
 </Window>

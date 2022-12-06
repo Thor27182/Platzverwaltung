@@ -32,7 +32,7 @@
         <TextBox x:Name="password" Grid.Row="3" Grid.Column="2" TextWrapping="Wrap" Text="Passwort eingeben" VerticalContentAlignment="Center" Height="30" Grid.ColumnSpan="1"/>
         <Button Content="Login" Grid.Row="4" Grid.Column="2" Click="Click_Login"/>
 
-        <Button Content="zurück" Grid.Row="6" Grid.Column="1" Click="Click_Login"/>
+        <Button Content="zurück" Grid.Row="6" Grid.Column="1" Click="Click_Back"/>
 
 
     </Grid>

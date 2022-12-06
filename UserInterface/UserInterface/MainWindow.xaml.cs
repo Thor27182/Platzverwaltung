@@ -28,8 +28,30 @@ namespace UserInterface
 
         private void goToLogin(object sender, RoutedEventArgs e)
         {
+            LoginPage loginPage = new LoginPage();
+            // Anbinden fuer Button-Klick
+            loginPage.NavigateBackHandler += goToMainWindowPage;
+            // Inhalt des Fensters anpassen
+            this.Content = loginPage;
+        }
+
+        private void goToRegistration(object sender, RoutedEventArgs e)
+        {
             RegistrationPage rp = new RegistrationPage();
             this.Content = rp;
         }
+
+        private void goToMainWindowPage(object sender, EventArgs e) {
+            // TODO: Subscription zum Eventhandler entfernen
+            // Inhalt leeren
+            this.Content = null;
+        }
+
+
+
+        // Seitenverwaltung:
+        // https://mycsharp.de/forum/threads/123158/wie-in-einem-frame-im-mainwindow-durch-buttons-pages-anzeigen-die-einmalig-initialisiert-wurden?page=1
+
+        // https://www.youtube.com/watch?v=aBh0weP1bmo
     }
 }

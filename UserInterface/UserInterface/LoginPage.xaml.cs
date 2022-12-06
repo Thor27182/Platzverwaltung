@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Login;
 
 namespace UserInterface
 {
@@ -20,6 +21,9 @@ namespace UserInterface
     /// </summary>
     public partial class LoginPage : Page
     {
+        // um aus MainWindow vom Event mitzubekommen
+        public event EventHandler NavigateBackHandler;
+
         public LoginPage()
         {
             InitializeComponent();
@@ -36,13 +40,21 @@ namespace UserInterface
 
             return false;*/
 
-            Login(username.Text, password.Text);
+            // Password hashen
+            string hashedPassword = Hashing.DoHash(this.password.Text);
+
+            Login(username.Text, hashedPassword);
+        }
+        public void Click_Back(object sender, RoutedEventArgs e) {
+            // Event ausloesen
+            NavigateBackHandler?.Invoke(this, EventArgs.Empty);
         }
 
         public void Login(string username, string password)
         {
             // TODO: Login
         }
+
 
     }
 }

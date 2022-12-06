@@ -1,0 +1,12 @@
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\Login.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\Login.pdb
+H:\LF12\Projekt\Framework2\UserInterface\Login\obj\Debug\Login.csproj.AssemblyReference.cache
+H:\LF12\Projekt\Framework2\UserInterface\Login\obj\Debug\Login.csproj.CoreCompileInputs.cache
+H:\LF12\Projekt\Framework2\UserInterface\Login\obj\Debug\Login.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\obj\Debug\Login.pdb
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\MySql.Data.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\Google.Protobuf.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\BouncyCastle.Crypto.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\Renci.SshNet.dll
+H:\LF12\Projekt\Framework2\UserInterface\Login\bin\Debug\MySql.Data.xml
+H:\LF12\Projekt\Framework2\UserInterface\Login\obj\Debug\Login.csproj.CopyComplete
