@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-H:\vscode\Schulprojekt\Platzverwaltung\UserInterface\UserInterface\obj\Debug\
+C:\Users\thore.braun\source\repos\Platzverwaltung\UserInterface\UserInterface\obj\Debug\
 UserInterface
 none
 false
 DEBUG;TRACE
-H:\vscode\Schulprojekt\Platzverwaltung\UserInterface\UserInterface\App.xaml
+C:\Users\thore.braun\source\repos\Platzverwaltung\UserInterface\UserInterface\App.xaml
 3-981923198
 
-7894581032
+8-1187507586
 13-1310406943
 MainWindow.xaml;Home.xaml;RegistrationPage.xaml;
 
-False
+True
 
