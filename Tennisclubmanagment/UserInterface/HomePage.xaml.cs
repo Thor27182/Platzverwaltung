@@ -16,28 +16,17 @@ using System.Windows.Shapes;
 namespace UserInterface
 {
     /// <summary>
-<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml.cs
     /// Interaktionslogik für HomePage.xaml
     /// </summary>
     public partial class HomePage : Page
     {
         public HomePage()
-========
-    /// Interaktionslogik für Home.xaml
-    /// </summary>
-    public partial class Home : Page
-    {
-        public Home()
->>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml.cs
         {
             InitializeComponent();
             DatePicker datePickerWithBlackoutDates = new DatePicker();
             var today = DateTime.Today;
-<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml.cs
             dp.SelectedDate = today;
-========
 
->>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml.cs
             //datePickerWithBlackoutDates.DisplayDateStart = new DateTime(2020, 1, 1);
             //datePickerWithBlackoutDates.DisplayDateEnd = new DateTime(2030, 1, 31);
             //datePickerWithBlackoutDates.SelectedDate = today;
@@ -49,20 +38,16 @@ namespace UserInterface
                 for (int j = 4; j <= 7; j++)
                 {
                     Button b = new Button();
-<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml.cs
                     b.Content = "Frei";
                     b.Background = Brushes.White;
                     b.Click += SlotButtonClick;
-========
                     b.Content = string.Format("Row: {0}, Column: {1}", i, j);
->>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml.cs
                     Grid.SetRow(b, i);
                     Grid.SetColumn(b, j);
                     grid.Children.Add(b);
                 }
             }
         }
-<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml.cs
 
         private void SlotButtonClick(object sender, RoutedEventArgs e)
         {
@@ -87,7 +72,5 @@ namespace UserInterface
                 (sender as Button).Content = "Frei";
             }
         }
-========
->>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml.cs
     }
 }
