@@ -6,7 +6,6 @@
         xmlns:local="clr-namespace:UserInterface"
         mc:Ignorable="d"
         Title="Platzverwaltungssystem" Height="600" Width="900">
-    <Grid>
+
         <Button Click="GoToLogin">Login</Button>
-    </Grid>
 </Window>
