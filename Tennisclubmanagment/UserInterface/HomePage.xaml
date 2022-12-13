@@ -1,0 +1,91 @@
+<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml
+﻿<Page x:Class="UserInterface.HomePage"
+========
+﻿<Page x:Class="UserInterface.Home"
+>>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UserInterface"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Home" Margin="10,10,10,10"
+      FontFamily="Calibri" FontSize="20">
+
+    <Grid Name="grid" Background="YellowGreen" HorizontalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Rectangle Grid.Column="0" Grid.ColumnSpan="9" Grid.Row="1" Fill="LimeGreen" Stroke="Black" StrokeThickness="1"></Rectangle>
+
+        <Button Grid.Column="1" Grid.Row="1">Heute</Button>
+        <Button Grid.Column="2" Grid.Row="1">Woche</Button>
+        <Button Grid.Column="7" Grid.Row="1">Profil</Button>
+
+<<<<<<<< HEAD:Tennisclubmanagment/UserInterface/HomePage.xaml
+        <DatePicker Name="dp" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" Grid.RowSpan="1">
+        </DatePicker>
+
+        <Label Grid.Column="3" Grid.Row="4" HorizontalAlignment="Right">10 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="5" HorizontalAlignment="Right">11 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="6" HorizontalAlignment="Right">12 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="7" HorizontalAlignment="Right">13 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="8" HorizontalAlignment="Right">14 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="9" HorizontalAlignment="Right">15 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="10" HorizontalAlignment="Right">16 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="11" HorizontalAlignment="Right">17 Uhr</Label>
+========
+        <DatePicker 
+            Grid.Column="1" 
+            Grid.ColumnSpan="2" 
+            Grid.Row="5" 
+            Name="datePickerWithBlackoutDates" 
+            FirstDayOfWeek="Monday" 
+            IsEnabled="False"
+            DisplayDateStart="01/01/2020">
+            <DatePicker.BlackoutDates>
+                <CalendarDateRange Start="01/01/2020" End=""/>
+            </DatePicker.BlackoutDates>
+        </DatePicker>
+
+        <Label Grid.Column="3" Grid.Row="4" HorizontalAlignment="Right">10 Uhr</Label>
+        <Label Grid.Column="3" Grid.Row="8" HorizontalAlignment="Right">14 Uhr</Label>
+>>>>>>>> f80994c459e9becbdaf99e6bc62332578fb2082e:Tennisclubmanagment/UserInterface/Home.xaml
+        <Label Grid.Column="3" Grid.Row="12" HorizontalAlignment="Right">18 Uhr</Label>
+
+        <Label Grid.Column="4" Grid.Row="3" Panel.ZIndex="1">Platz 1</Label>
+        <Label Grid.Column="5" Grid.Row="3" Panel.ZIndex="1">Platz 2</Label>
+        <Label Grid.Column="6" Grid.Row="3" Panel.ZIndex="1">Platz 3</Label>
+        <Label Grid.Column="7" Grid.Row="3" Panel.ZIndex="1">Platz 4</Label>
+
+        <Rectangle Grid.Column="4" Grid.ColumnSpan="4" Grid.Row="3" Grid.RowSpan="10" Fill="AliceBlue"/>
+    </Grid>
+</Page>
