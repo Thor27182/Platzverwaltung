@@ -32,7 +32,8 @@ namespace UserInterface
 
         private void Registration_Click(object sender, RoutedEventArgs e)
         {
-
+            HomePage hp = new HomePage();
+            App.Current.MainWindow.Content = hp;
         }
     }
 }
