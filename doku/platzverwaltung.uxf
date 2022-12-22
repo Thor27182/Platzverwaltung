@@ -1,0 +1,37 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>190</y><w>210</w><h>190</h></coordinates><panel_attributes>Platzverwaltung
+--
+
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>850</x><y>190</y><w>210</w><h>190</h></coordinates><panel_attributes>Platz
+--
+-id: int
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>260</y><w>270</w><h>50</h></coordinates><panel_attributes>lt=-
+m1=1..n
+m2=1
+</panel_attributes><additional_attributes>250;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>380</x><y>560</y><w>210</w><h>190</h></coordinates><panel_attributes>Kunden
+--
+-id: int
+-Nachname: String
+-Vorname: String
+-Geburstag: Date
+-Iban: String
+-Stadt: String
+-Straße: String
+-Hausnummer: int
+-PLZ: int
+-Emailadresse: String
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+-- Resp2</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>370</y><w>50</w><h>210</h></coordinates><panel_attributes>lt=-
+m1=0..n
+m2=1
+</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element></diagram>
