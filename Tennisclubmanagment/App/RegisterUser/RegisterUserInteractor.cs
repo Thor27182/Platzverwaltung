@@ -11,6 +11,7 @@ namespace App.RegisterUser
         RegisterUserRequestmodel _requestmodel;
         RegisterUserResponsmodel _responsmodel;
 
+
         public void RegisterUser(
             string username,
             string password,
@@ -23,16 +24,7 @@ namespace App.RegisterUser
             string city,
             string iban)
         {
-            RegisterUserRequestmodel = new RegisterUserRequestmodel(string username,
-            string password,
-            string firstName,
-            string middelNames,
-            string lastName,
-            string street,
-            int houseNo,
-            string postCode,
-            string city,
-            string iban);
+            RegisterUserRequestmodel requestmodel = new RegisterUserRequestmodel(username, password, firstName, middelNames, lastName, street, houseNo, postCode, city, iban);
         }
     }
 }

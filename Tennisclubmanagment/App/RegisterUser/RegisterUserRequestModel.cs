@@ -8,15 +8,15 @@ namespace App.RegisterUser
 {
     internal class RegisterUserRequestmodel
     {
-        public string Username { get; }
-        public string Password { get; }
-        public string FirstName { get; }
-        public string MiddelNames { get; }
-        public string LastName { get; }
-        public string Street { get; }
-        public int HouseNo { get; }
-        public string PostCode { get; }
-        public string Iban { get; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string FirstName { get; set; }
+        public string MiddelNames { get; set;  }
+        public string LastName { get; set; }
+        public string Street { get; set; }
+        public int HouseNo { get; set; }
+        public string PostCode { get; set; }
+        public string Iban { get; set;}
         
         public RegisterUserRequestmodel(
            string username,

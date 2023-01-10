@@ -16,5 +16,13 @@ namespace Domainmodel
             Tennisplayers = new List<Tennisplayer>();
             Tenniscourts = new List<Tenniscourt>();
         }
+
+        public void AddTennisplayer(Tennisplayer tennisplayer)
+        {
+               
+        }
+
+        public bool hasTennisplayer(string username) => 
+            Tennisplayers.Any(x => x.Username.Equals(username, StringComparison.CurrentCultureIgnoreCase));
     }
 }
