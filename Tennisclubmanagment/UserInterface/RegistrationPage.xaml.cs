@@ -27,7 +27,8 @@ namespace UserInterface
 
         private void Login_Click(object sender, RoutedEventArgs e)
         {
-
+            //LoginPage lp = new LoginPage();
+            //App.Current.MainWindow.Content = lp;
         }
 
         private void Registration_Click(object sender, RoutedEventArgs e)

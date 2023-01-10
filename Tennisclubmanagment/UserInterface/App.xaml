@@ -11,8 +11,8 @@
         </Style>
 
         <Style TargetType="Grid">
-            <Setter Property="Height" Value="450" />
-            <Setter Property="Width" Value="800" />
+            <!--<Setter Property="Height" Value="450" />
+            <Setter Property="Width" Value="800" />-->
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
         </Style>

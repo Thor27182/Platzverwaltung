@@ -23,7 +23,6 @@ namespace UserInterface
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void GoToLogin(object sender, RoutedEventArgs e)

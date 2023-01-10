@@ -24,15 +24,19 @@ namespace UserInterface
         {
             InitializeComponent();
             DatePicker datePickerWithBlackoutDates = new DatePicker();
-            var today = DateTime.Today;
-            dp.SelectedDate = today;
+            //var today = DateTime.Today;
+            //dp.SelectedDate = today;
 
             //datePickerWithBlackoutDates.DisplayDateStart = new DateTime(2020, 1, 1);
             //datePickerWithBlackoutDates.DisplayDateEnd = new DateTime(2030, 1, 31);
             //datePickerWithBlackoutDates.SelectedDate = today;
 
             //datePickerWithBlackoutDates.BlackoutDates.Add(new CalendarDateRange(new DateTime(2020, 1, 1), today));
+            setButtons(); 
+        }
 
+        private void setButtons()
+        {
             for (int i = 4; i <= 12; i++)
             {
                 for (int j = 4; j <= 7; j++)
@@ -41,14 +45,12 @@ namespace UserInterface
                     b.Content = "Frei";
                     b.Background = Brushes.White;
                     b.Click += SlotButtonClick;
-                    b.Content = string.Format("Row: {0}, Column: {1}", i, j);
                     Grid.SetRow(b, i);
                     Grid.SetColumn(b, j);
                     grid.Children.Add(b);
                 }
             }
         }
-
         private void SlotButtonClick(object sender, RoutedEventArgs e)
         {
             ChangeButtonLayout(sender);
@@ -71,6 +73,13 @@ namespace UserInterface
                 ((Control)sender).Background = Brushes.White;
                 (sender as Button).Content = "Frei";
             }
+        }
+
+        private void DatePicker_SelectedDateChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var picker = sender as DatePicker;
+            DateTime? date = picker.SelectedDate;
+            setButtons();
         }
     }
 }
