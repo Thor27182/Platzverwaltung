@@ -1,0 +1,138 @@
+* Backlog
+** Epic: Neukunde registrieren
+*** Userstory: Als Tennisspieler möchte ich mich bei der FitAndFun GmbH registrieren, um dort Tennis spielen zu können
+**** Task: Datenbank erstellen.
+**** Task: Kunde im Datenmodel erstellen.
+**** Task: Formular für die Kundeneingabe.
+**** Task: Nutzereingaben müssen validiert werden.
+**** Task: Kunde auf AGB's & Datenschutz hinweisen
+**** Task: Kunden in Datenbank eintragen 
+*** Userstory: Als Mitarbeiter muss ich Kunden registrieren können.
+**** Task: Datenbank erstellen.
+**** Task: Kunde im Datenmodel erstellen.
+**** Task: Formular für die Kundeneingabe.
+**** Task: Nutzereingaben müssen validiert werden.
+**** Task: Kunde auf AGB's & Datenschutz hinweisen (ausdruckbar für Aushändigung).
+**** Task: Kunden in Datenbank eintragen.  
+*** Userstory: Als Tennisspieler möchte ich informiert werden, das für mich ein Account angelegt wurde.
+**** Task: Notifikation-Schnittstelle erstellen.
+**** Task: Registrierungsbestätigung anzeigen.
+** Epic: Kunden Funktionalitäten
+*** Userstory: Als Tennisspieler will ich Buchungen stornieren können, damit ich keine Platzgebür bezahlen muss.
+**** Task: Auswahl von Zeitslots ermöglichen.
+***** Subtask: Datenbankzugriff für Plätze (Stornierung).
+**** Task: Rechnung aus Konto entfernen.
+***** Subtask: Datenbankzugriff für Konto (Entfernen).
+**** Task: Stornierungsbestätigung senden.
+*** Userstory: Als Tennisspieler will ich meine Rechnungen einsehen, um einen Überblick über die Kosten zu haben.
+**** Task: Alle offene Rechnungen in Kontoansicht anzeigen.
+**** Task: Alle Stornierungen in Kontoansicht anzeigen.
+*** Userstory: Als Tennisspieler muss ich mich ausloggen können.
+**** Task: Auslogfunktion.
+**** Task: Rückkehr zum Login.
+*** Userstory: Als Tennisspieler muss ich ein Kunden-Handbuch einsehen können.
+**** Task: Kunden-Handbuch erstellen.
+** Epic: Mitarbeiter Funktionalitäten
+*** Userstory: Als Mitarbeiter muss ich eine Tagesübersicht über die Plätze haben, um Kundenbuchungen koordinieren zu können.
+**** Task: Zeitslots farbig markieren.
+**** Task: Ansicht über alle 4 Plätze.
+**** Task: Anzeige des Buchers einer Buchung.
+**** Task: Anzeige von vergangenem, gegenwärtigem und zukünftigem Datum möglich.
+*** Userstory: Als Mitarbeiter muss ich mich einloggen können.
+**** Task: Einlogfunktion mit Mitarbeiterdaten.
+**** Task: Weiterleitung zu Mitarbeiter-Tagesansicht des aktuellen Datums.
+
+*** Userstory: Als Mitarbeiter muss ich Plätze an bestimmten Tagen zu bestimmten Zeitslots sperren können.
+**** Task: Auswahl von Zeitslots ermöglichen.
+***** Subtask: Datenbankzugriff für Plätze (Sperrung).
+**** Task: Vorhandene Buchungen stornieren.
+***** Subtask: Datenbankzugriff für Plätze (Stornierung).
+***** Subtask: Stornierungsmeldung an Kunde senden.
+**** Task: Rechnung aus Konto entfernen.
+***** Subtask: Datenbankzugriff für Konto (Entfernen).
+*** Userstory: Als Mitarbeiter muss ich bestehende Sperrungen aufheben können.
+**** Task: Auswahl von Zeitslots ermöglichen.
+***** Subtask: Datenbankzugriff für Plätze (Freigabe).
+*** Userstory: Als Mitarbeiter muss ich die Kundendaten in einer JSON-Datei herunterladen können.
+**** Task: Umwandlung in JSON-Format.
+*** Userstory: Als Mitarbeiter muss ich mich ausloggen können.
+**** Task: Auslogfunktion.
+**** Task: Rückkehr zum Login.
+*** Userstory: Als Mitarbeiter muss ich ein Mitarbeiter-Handbuch einsehen können.
+**** Task: Mitarbeiter-Handbuch erstellen.
+** DONE Epic: Datenmodelle - Thore
+**** Task: Datenmodell Tennisspieler erstellen.    => Datenmodell:        KundenId; Benutzername; Passwort; Vorname; Nachname; Geburtsdatum; Adresse (PLZ; Ort; Straße; Hausnummer); E-Mail-Adresse
+**** Task: Datenmodell Admin erstellen.    => Datenmodell:        Benutzername; Passwort
+**** Task: Datenmodell Buchung erstellen.     => Datenmodell:     KundenId; PlatzId; Datum; StartUhrzeit; EndUhrzeit; Preis     
+**** Task: Datenmodell Stornierung erstellen.  => Datenmodell:    KundenId; PlatzId; Datum; StartUhrzeit; EndUhrzeit; Preis
+**** Task: Datenmodell Sperrung erstellen.    => Datenmodell:     PlatzId; Datum; StartUhrzeit; EndUhrzeit
+**** Task: Datenmodell Rechnung erstellen.     => Datenmodell:    KundenId; Liste von Buchungen; Gesamtpreis
+**** Task: Datenmodell Platz erstellen.   => Datenmodell:         PlatzId; Platzinformationen(Platzname; Platztyp)
+** Epic: App-Ansichten
+*** Userstory: Ansicht-Login erstellen. - Mandy
+**** Task: Login-Formular erstellen.
+**** Task: Login-Funktionalität implementieren.
+**** Task: Passwort-Verschlüsselung.
+*** Userstory: Registrierung - Florian
+**** Task: Ansicht-Registrierung erstellen.
+***** Subtask: Registrierungsformular erstellen.
+***** Subtask: Registrierungsfunktionalität implementieren.
+***** Subtask: Passwort-Verschlüsselung.
+***** Subtask: Datenbankzugriff Kunden (Anlegen).
+***** Subtask: Verlinkung zu Login einfügen.
+***** Subtask: Verlinkung zu Datenschutz und AGBs einfügen.
+**** Task: Registrierung auf Login verlinken
+**** Subtask: Verlinkung zu Login einfügen.
+**** Subtask: Verlinkung zu Datenschutz und AGBs einfügen.
+*** Task: Ansicht-Kunde-Plätze erstellen. - Florian
+**** Subtask: Navigationsleiste mit Logout, Konto-Menü und eigenen Rechnungen.
+**** Subtask: Kalender einbetten.
+**** Subtask: Auflistung der Plätze in 1-h-Zeitslots.
+**** Subtask: Zeitslots mithilfe der Daten aus Datenbank anpassen.
+**** Subtask: Buttonleiste mit Buttons zur Buchung, Stornierung und einer aktuellen Preisanzeige.
+**** Subtask: Buchungs- und Stornierungsfunktionalitäten mit Buttons verknüpfen.
+*** Task: Ansicht-Mitarbeiter-Plätze erstellen.
+**** Subtask: Navigationsleiste mit Logout und Kundensuche.
+**** Subtask: Kalender einbetten.
+**** Subtask: Auflistung der Plätze in 1-h-Zeitslots.
+**** Subtask: Zeitslots mithilfe der Daten aus der Datenbank anpassen, zusätzlich mit Namen der Bucher.
+**** Subtask: Buttonleiste mit Buttons zur Sperrung und Entsperrung.
+**** Subtask: Sperrungs- und Entsperrungsfunktionen mit Buttons verknüpfen.
+**** Subtask: 
+*** Task: Ansicht-Kunde-Konto erstellen.
+**** Subtask: eigene Kundeninformationen darstellen.
+**** Subtask: eigene Kundeninformationen ändern.
+*** Task: Ansicht-Rechnungen
+**** Subtask: eigene Rechnungshistorie darstellen.
+*** Task: Ansicht-Kundeninfo-Konto erstellen.
+**** Subtask: Kundeninformationen darstellen.
+**** Subtask: Rechnungen des Kunden darstellen.
+**** Subtask: Button für JSON-Export.
+**** Subtask: JSON-Export-Funktionalität verknüpfen.
+
+
+* Sprint 1
+
+*** Userstory: Als Tennisspieler will ich über einen Kalender die Tagesübersicht aller Plätze aufrufen können.
+**** Task: Userinterface Tagesübersicht Platzverwaltung erstellen
+**** Task: Funktionalität zur Anzeige des Tages per Datenbankzugriff erstellen.
+***** Subtask: Datenbankzugriff.
+***** Subtask: Errechnung der Zeitslots.
+***** Subtask: Beschränkung auf aktuelles und zukünftiges Datum.
+
+*** Userstory: Als Tennisspieler will ich eine Tagesübersicht über die Plätze haben um meine eigenen Buchungen koordinieren zu können.
+**** Task: Zeitslots farbig markieren.
+**** Task: Ansicht über alle 4 Plätze.
+
+*** Userstory: Als Tennisspieler Will ich Plätze buchen, um Tennis an bestimmten terminen zu spielen.
+**** Task: Auswahl von Zeitslots ermöglichen.
+***** Subtask: Datenbankzugriff für Plätze (Buchung).
+**** Task: Rechnung in Konto hinterlegen.
+***** Subtask: Datenbankzugriff für Konto (Hinzufügen).
+**** Task: Buchungsbestätigung senden.
+
+*** Userstory: Als Tennisspieler will ich mich einloggen, um zugriff auf die Funktionalitäten des System zu bekommen.
+**** Task: Userinterface Login erstellen
+**** Task: Nutzerautentifizierung implementieren
+**** Task: Nutzerautorisierung implementieren
+**** Task: Rollenset implementieren
