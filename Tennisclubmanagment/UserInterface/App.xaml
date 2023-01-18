@@ -5,14 +5,15 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
 
+        <!--
         <Style TargetType="Page">
             <Setter Property="Height" Value="450" />
             <Setter Property="Width" Value="800" />
         </Style>
 
         <Style TargetType="Grid">
-            <!--<Setter Property="Height" Value="450" />
-            <Setter Property="Width" Value="800" />-->
+            <Setter Property="Height" Value="450" />
+            <Setter Property="Width" Value="800" />
             <Setter Property="HorizontalAlignment" Value="Center" />
             <Setter Property="VerticalAlignment" Value="Center" />
         </Style>
@@ -70,7 +71,7 @@
 
         <Style TargetType="Border">
             <Setter Property="CornerRadius" Value="10"/>
-        </Style>
+        </Style>-->
 
     </Application.Resources>
 </Application>
