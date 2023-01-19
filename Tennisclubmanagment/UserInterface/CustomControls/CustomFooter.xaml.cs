@@ -16,28 +16,29 @@ using System.Windows.Shapes;
 namespace UserInterface.CustomControls
 {
     /// <summary>
-    /// Interaktionslogik für Index.xaml
+    /// Interaktionslogik für CustomFooter.xaml
     /// </summary>
-    public partial class Index : UserControl
+    public partial class CustomFooter : UserControl
     {
         public event EventHandler OnButtonClicked;
 
-        public Index()
+
+        public CustomFooter()
         {
             InitializeComponent();
         }
 
-        private void Uebersicht_Button_Click(object sender, RoutedEventArgs e)
+        private void AGB_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
         }
 
-        private void Login_Button_Click(object sender, RoutedEventArgs e)
+        private void Datenschutz_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
         }
 
-        private void Registrierung_Button_Click(object sender, RoutedEventArgs e)
+        private void Impressum_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
         }

@@ -1,22 +1,19 @@
-﻿<UserControl x:Class="UserInterface.CustomControls.Index"
+﻿<UserControl x:Class="UserInterface.CustomControls.CustomFooter"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserInterface.CustomControls"
-             xmlns:customControl="clr-namespace:UserInterface.CustomControls"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    
-    <StackPanel Width="500"
-        HorizontalAlignment="Center" VerticalAlignment="Center">
-        <!-- TODO: Grafik/Image einfuegen? -->
-        <Label Content="Platzverwaltung" HorizontalAlignment="Center"
-               FontSize="24" FontWeight="Medium"/>
-        <Label Content="Herzlich Willkommen!" HorizontalAlignment="Center"/>
-        <!--<customControl:CustomLoginForm Margin="0,10,0,0"></customControl:CustomLoginForm>-->
-        <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
-                Foreground="White">
+             d:DesignHeight="50" d:DesignWidth="800">
+    <Grid Background="#9ACD32" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button x:Name="agbBtn" Content="AGBs" Margin="0,0,10,0" Height="30" Width="120"
+                Foreground="White" Click="AGB_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -37,8 +34,9 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="loginBtn" Content="Login" Margin="0,0,0,5" Height="30" Width="200"
-                Foreground="White">
+
+        <Button x:Name="datenschutzBtn" Content="Datenschutzerklärung" Margin="0,0,10,0" Height="30" Width="150"
+                Foreground="White" Click="Datenschutz_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -59,8 +57,9 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-        <Button x:Name="regisrierenBtn" Content="Registrieren" Height="30" Width="200"
-                Foreground="White">
+
+        <Button x:Name="impressumBtn" Content="Impressum" Margin="0,0,0,0" Height="30" Width="120"
+                Foreground="White" Click="Impressum_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -81,5 +80,6 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
-    </StackPanel>
+        </StackPanel>
+    </Grid>
 </UserControl>
