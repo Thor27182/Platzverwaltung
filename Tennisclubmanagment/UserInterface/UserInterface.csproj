@@ -65,6 +65,7 @@
     <Compile Include="CustomControls\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModels\IndexViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="Views\AGBPage.xaml.cs">
       <DependentUpon>AGBPage.xaml</DependentUpon>

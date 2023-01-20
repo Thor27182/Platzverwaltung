@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using UserInterface.ViewModels;
+using UserInterface.Views;
 
 namespace UserInterface.CustomControls
 {
@@ -20,13 +22,26 @@ namespace UserInterface.CustomControls
     /// </summary>
     public partial class Index : UserControl
     {
-        public event EventHandler OnButtonClicked;
+        public event EventHandler NavigateToOverview;
 
         public Index()
         {
             InitializeComponent();
+
+            //this.Parent;
+            //(this.DataContext as IndexViewModel).OnNavigateToLogin;
+            (this.DataContext as IndexViewModel).NavigateToOverview += OnNavigateToOverview;
+
+
+
         }
 
+        public void OnNavigateToOverview(object sender, RoutedEventArgs e)
+        {
+            NavigateToOverview?.Invoke(sender, e);
+        }
+
+        /*
         private void Uebersicht_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
@@ -41,5 +56,6 @@ namespace UserInterface.CustomControls
         {
             OnButtonClicked?.Invoke(sender, e);
         }
+        */
     }
 }

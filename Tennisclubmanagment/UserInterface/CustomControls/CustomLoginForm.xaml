@@ -33,13 +33,13 @@
                     VerticalContentAlignment="Center"/>
             <!-- Eingabefelde fuer den Benutzernamen -->
             <TextBox Grid.Column="1" Grid.Row="0"
-                     Margin="10,0,0,0"
+                     Margin="10,0,0,0" Height="30"
                      HorizontalContentAlignment="Right"
                      VerticalContentAlignment="Center"/>
             <!-- Eingabefeld fuer das Passwort -->
             <!-- TODO: Passwort schuetzen -->
             <TextBox Grid.Column="1" Grid.Row="1"
-                     Margin="10,0,0,0"
+                     Margin="10,0,0,0" Height="30"
                      HorizontalContentAlignment="Right"
                      VerticalContentAlignment="Center"/>
 
@@ -56,7 +56,7 @@
                     </Grid.RowDefinitions>
                     <!-- zurueck-Navigationsbutton - Hier noeitg? Oder bessen in MainWindow packen? -->
                     <Button Content="zurück" Grid.Column="0" Grid.Row="2" Margin="0,0,10,0" Height="30" 
-                            Foreground="White">
+                            Foreground="White" Command="{x:Static NavigationCommands.BrowseBack}">
 
                         <!-- Farbe setzen ohne und beim Hovern -->
                         <Button.Style>

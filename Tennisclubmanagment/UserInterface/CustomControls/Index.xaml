@@ -5,18 +5,26 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserInterface.CustomControls"
              xmlns:customControl="clr-namespace:UserInterface.CustomControls"
+             xmlns:viewModel="clr-namespace:UserInterface.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    
+
+    <Control.DataContext>
+        <viewModel:IndexViewModel/>
+    </Control.DataContext>
+
     <StackPanel Width="500"
         HorizontalAlignment="Center" VerticalAlignment="Center">
         <!-- TODO: Grafik/Image einfuegen? -->
+        <!-- Titel/Ueberschrift -->
         <Label Content="Platzverwaltung" HorizontalAlignment="Center"
                FontSize="24" FontWeight="Medium"/>
+        <!-- Kleinerer Text -->
         <Label Content="Herzlich Willkommen!" HorizontalAlignment="Center"/>
-        <!--<customControl:CustomLoginForm Margin="0,10,0,0"></customControl:CustomLoginForm>-->
+        
+        <!-- Uebersichtsbutton -->
         <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
-                Foreground="White">
+                Foreground="White" Command="{Binding NavigateToOverviewCommand}">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -37,8 +45,10 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        
+        <!-- Loginbutton -->
         <Button x:Name="loginBtn" Content="Login" Margin="0,0,0,5" Height="30" Width="200"
-                Foreground="White">
+                Foreground="White" Command="{Binding NavigateToLoginCommand}">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -59,8 +69,10 @@
                 </ControlTemplate>
             </Button.Template>
         </Button>
+        
+        <!-- Registrierungsbutton -->
         <Button x:Name="regisrierenBtn" Content="Registrieren" Height="30" Width="200"
-                Foreground="White">
+                Foreground="White" Command="{Binding NavigateToRegistrationCommand}">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
