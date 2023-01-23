@@ -11,7 +11,7 @@ using UserInterface.Views;
 
 namespace UserInterface.ViewModels
 {
-    public class IndexViewModel
+    public class IndexViewModel : ViewModelBase
     {
         public event RoutedEventHandler NavigateToOverview;
         public event RoutedEventHandler NavigateToLogin;

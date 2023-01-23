@@ -18,13 +18,14 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
             
-            <!-- TODO: Navigation-Bar in Row 0 -->
+            <!-- Navigation-Bar oben -->
+            <!-- TODO: Anpassung, fuer verschiene Zustaende Gast, GastÜbersicht-Tag/Woche, UserÜbersicht-Tag/Woche, User-Profil, usw. -->
             <customControl:CustomMainNavBar Grid.Row="0"/>
 
-            <!-- TODO: Content in Row 1 -->
+            <!-- Content in Frame zur Ausnutzer der Navigation, die Frame liefert (ohne wie Browser zu wirken)-->
             <Frame x:Name="content" Source="/Views/IndexPage.xaml" Grid.Row="1" NavigationUIVisibility="Hidden"/>
 
-            <!-- TODO: Footer in Row 2 -->
+            <!-- Footer als Custom Control -->
             <customControl:CustomFooter Grid.Row="2" OnButtonClicked="CustomFooter_OnButtonClicked"/>
         </Grid>
     </Border>

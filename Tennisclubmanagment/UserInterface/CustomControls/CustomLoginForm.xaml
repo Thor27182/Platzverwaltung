@@ -4,8 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:UserInterface.CustomControls"
+             xmlns:viewModel="clr-namespace:UserInterface.ViewModels"
              mc:Ignorable="d" 
              d:DesignHeight="230" d:DesignWidth="500">
+
+    <Control.DataContext>
+        <viewModel:LoginViewModel/>
+    </Control.DataContext>
 
     <Border BorderBrush="#9ACD32" BorderThickness="1">
         <Grid Margin="15">
@@ -34,18 +39,18 @@
             <!-- Eingabefelde fuer den Benutzernamen -->
             <TextBox Grid.Column="1" Grid.Row="0"
                      Margin="10,0,0,0" Height="30"
-                     HorizontalContentAlignment="Right"
+                     HorizontalContentAlignment="Left"
                      VerticalContentAlignment="Center"/>
             <!-- Eingabefeld fuer das Passwort -->
             <!-- TODO: Passwort schuetzen -->
             <TextBox Grid.Column="1" Grid.Row="1"
                      Margin="10,0,0,0" Height="30"
-                     HorizontalContentAlignment="Right"
+                     HorizontalContentAlignment="Left"
                      VerticalContentAlignment="Center"/>
 
             <StackPanel Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Orientation="Vertical" VerticalAlignment="Bottom">
-                <!-- Fehlermeldung wenn vorhandne anzeigen -->
-                <TextBlock Text="ErrorMessage" Height="50" Foreground="Red" FontSize="12" TextWrapping="Wrap" />
+                <!-- Fehlermeldung wenn vorhanden anzeigen -->
+                <TextBlock Text="{Binding ErrorMessage}" Height="50" Foreground="Red" FontSize="12" TextWrapping="Wrap" />
                 <Grid Margin="0,20,0,0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -81,7 +86,7 @@
 
                     <!-- Login-Button -->
                     <Button Content="Login" Grid.Column="1" Grid.Row="2" Margin="10,0,0,0" Height="30" 
-                            Background="#50723C" Foreground="White" Command="{x:Static NavigationCommands.GoToPage}" CommandParameter="/Views/ImpressumPage.xaml">
+                            Background="#50723C" Foreground="White" Command="{Binding LoginCommand}">
                         <!-- Farbe setzen ohne und beim Hovern -->
                         <Button.Style>
                             <Style TargetType="Button">

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domainmodel
 {
-    internal class Tenniscourt
+    public class Tenniscourt
     {
         int Courtnumber { get; set; }
         List<Reservation> Reservations { get; }

@@ -33,7 +33,7 @@ namespace UserInterface.Views
         }
         #region Navigation
         /// <summary>
-        /// Methode zum Aendern des Contents im Hauptbereich des Fensters
+        /// Methode zum Aendern des Contents im Hauptbereich des Fensters - erstmal verworfen
         /// </summary>
         /// <param name="page">Inhaltsseite fuer den Frame</param>
         private void ChangeContent(Page page)

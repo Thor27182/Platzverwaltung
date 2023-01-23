@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domainmodel
 {
-    internal class Tennisplayer
+    public class Tennisplayer
     {
         public string Username { get; set; }
         public string Password { get; set; }
