@@ -8,6 +8,8 @@
         mc:Ignorable="d"
         Title="MainView" Height="450" Width="800"
         Background="#FFF2CC">
+
+    
     <Border>
         <Grid>
             <Grid.RowDefinitions>
@@ -20,7 +22,7 @@
             <customControl:CustomMainNavBar Grid.Row="0"/>
 
             <!-- TODO: Content in Row 1 -->
-            <Frame x:Name="content" Source="/CustomControls/Index.xaml" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+            <Frame x:Name="content" Source="/Views/IndexPage.xaml" Grid.Row="1" NavigationUIVisibility="Hidden"/>
 
             <!-- TODO: Footer in Row 2 -->
             <customControl:CustomFooter Grid.Row="2" OnButtonClicked="CustomFooter_OnButtonClicked"/>

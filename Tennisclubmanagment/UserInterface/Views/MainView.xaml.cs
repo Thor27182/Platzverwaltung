@@ -41,6 +41,19 @@ namespace UserInterface.Views
             content.Navigate(page);
         }
 
+        /*
+        private void GoToPage(object sender, ExecutedRoutedEventArgs e)
+        {
+            content.NavigationService.Navigate(new Uri((string)e.Parameter, UriKind.Relative));
+        }
+
+        private void CanGoToPage(object sender, CanExecuteRoutedEventArgs e)
+        {
+            e.CanExecute = true;
+        }*/
+
+
+
         private void NavigateToOverview() 
         {
             // TODO: Anpassen zu einer OverviewPage

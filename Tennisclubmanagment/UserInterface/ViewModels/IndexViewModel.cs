@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Input;
 using UserInterface.Commands;
 using UserInterface.Views;
@@ -13,8 +14,8 @@ namespace UserInterface.ViewModels
     public class IndexViewModel
     {
         public event RoutedEventHandler NavigateToOverview;
-        public event RoutedEventHandler OnNavigateToLogin;
-        public event RoutedEventHandler OnNavigateToRegistration;
+        public event RoutedEventHandler NavigateToLogin;
+        public event RoutedEventHandler NavigateToRegistration;
 
         public ICommand NavigateToOverviewCommand { get; }
         public ICommand NavigateToLoginCommand { get; }
@@ -30,7 +31,7 @@ namespace UserInterface.ViewModels
         {
             // Nach oben reichen, dass zu Uebersicht gewechselt werden soll
             // TODO: Einbau des Navigationswechsels
-            MessageBox.Show("Overview");
+            //MessageBox.Show("Overview");
             NavigateToOverview?.Invoke(this, new RoutedEventArgs());
         }
 
@@ -38,19 +39,23 @@ namespace UserInterface.ViewModels
         {
             // Nach oben reichen, dass zu Uebersicht gewechselt werden soll
             // TODO: Einbau des Navigationswechsels
-            MessageBox.Show("Login");
+            //MessageBox.Show("Login");
+            NavigateToLogin?.Invoke(this, new RoutedEventArgs());
         }
 
         public void ExecuteNavigateToRegistrationCommand(object obj)
         {
             // Nach oben reichen, dass zu Uebersicht gewechselt werden soll
             // TODO: Einbau des Navigationswechsels
-            MessageBox.Show("Registration");
+            //MessageBox.Show("Registration");
+            NavigateToRegistration?.Invoke(this, new RoutedEventArgs());
         }
 
+        /*
         public void OnNavigateToOverview(object sender, RoutedEventArgs e)
         { 
             NavigateToOverview?.Invoke(sender, e);
         }
+        */
     }
 }

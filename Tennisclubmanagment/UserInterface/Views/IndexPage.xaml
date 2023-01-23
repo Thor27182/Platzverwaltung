@@ -1,0 +1,99 @@
+﻿<Page x:Class="UserInterface.Views.IndexPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UserInterface.Views"
+      xmlns:viewModel="clr-namespace:UserInterface.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="IndexPage">
+
+    <Page.DataContext>
+        <viewModel:IndexViewModel/>
+    </Page.DataContext>
+
+    <StackPanel Width="500"
+        HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- TODO: Grafik/Image einfuegen? -->
+        <!-- Titel/Ueberschrift -->
+        <Label Content="Platzverwaltung" HorizontalAlignment="Center"
+               FontSize="24" FontWeight="Medium"/>
+        <!-- Kleinerer Text -->
+        <Label Content="Herzlich Willkommen!" HorizontalAlignment="Center"/>
+
+        <!-- Uebersichtsbutton -->
+        <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
+                Foreground="White" 
+                Command="{Binding NavigateToOverviewCommand}">
+            <!-- Farbe setzen ohne und beim Hovern -->
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#50723C"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF66904E"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <!-- Template fuer den Button, um Ecken abzurunden-->
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Loginbutton -->
+        <Button x:Name="loginBtn" Content="Login" Margin="0,0,0,5" Height="30" Width="200"
+                Foreground="White" Command="{Binding NavigateToLoginCommand}">
+            <!-- Farbe setzen ohne und beim Hovern -->
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#50723C"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF66904E"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <!-- Template fuer den Button, um Ecken abzurunden-->
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <!-- Registrierungsbutton -->
+        <Button x:Name="regisrierenBtn" Content="Registrieren" Height="30" Width="200"
+                Foreground="White" Command="{Binding NavigateToRegistrationCommand}">
+            <!-- Farbe setzen ohne und beim Hovern -->
+            <Button.Style>
+                <Style TargetType="Button">
+                    <Setter Property="Background" Value="#50723C"/>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FF66904E"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <!-- Template fuer den Button, um Ecken abzurunden-->
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Border CornerRadius="5" Background="{TemplateBinding Background}">
+                        <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+    </StackPanel>
+
+</Page>

@@ -30,16 +30,19 @@ namespace UserInterface.CustomControls
 
             //this.Parent;
             //(this.DataContext as IndexViewModel).OnNavigateToLogin;
-            (this.DataContext as IndexViewModel).NavigateToOverview += OnNavigateToOverview;
+
+            //(this.DataContext as IndexViewModel).NavigateToOverview += OnNavigateToOverview;
 
 
 
         }
-
+        /*
         public void OnNavigateToOverview(object sender, RoutedEventArgs e)
         {
             NavigateToOverview?.Invoke(sender, e);
-        }
+        }*/
+
+
 
         /*
         private void Uebersicht_Button_Click(object sender, RoutedEventArgs e)
