@@ -8,5 +8,6 @@ namespace App.RegisterUser
 {
     internal interface IRegisterUserResponseInterface
     {
+        RegisterUserResponsmodel Systemrespons(); 
     }
 }
