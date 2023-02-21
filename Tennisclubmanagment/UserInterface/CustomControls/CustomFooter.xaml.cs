@@ -31,6 +31,7 @@ namespace UserInterface.CustomControls
 
         // Mehrere Methoden in derzeitiger Fassung unnoetig, da alle das gleiche tun
         // TODO: Anpassen, wenn keine weiteren Aenderungen
+        // Besser als Command in MainViewModel mit hier im XAML MainViewModel als DataContext
 
         /// <summary>
         /// Methode zum Auslösen des Ereignisses zum Einleiten der Navigation

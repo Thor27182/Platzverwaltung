@@ -13,8 +13,8 @@ using UserInterface.Commands;
 
 namespace UserInterface.ViewModels
 {
-    //public class LoginViewModel : ViewModelBase
-    public class LoginViewModel
+    public class LoginViewModel : ViewModelBase
+    //public class LoginViewModel
     {
         // Benutzername
         private string _username;
@@ -31,7 +31,7 @@ namespace UserInterface.ViewModels
             get { return _username; }
             set { 
                 _username = value;
-                //OnPropertyChanged(nameof(Username));
+                OnPropertyChanged(nameof(Username));
             }
         }
         public SecureString Password {
@@ -39,7 +39,7 @@ namespace UserInterface.ViewModels
             set
             {
                 _password = value;
-                //OnPropertyChanged(nameof(Password));
+                OnPropertyChanged(nameof(Password));
                 //_passwort = Hasher.Hash(value);
             }
         }
@@ -48,7 +48,7 @@ namespace UserInterface.ViewModels
             set
             {
                 _errorMessage = value;
-                //OnPropertyChanged(nameof(ErrorMessage));
+                OnPropertyChanged(nameof(ErrorMessage));
             }
         }
 

@@ -26,6 +26,7 @@ namespace UserInterface.Views
             InitializeComponent();
 
         }
+
         #region Navigation
         // Die Methoden hier werden fuer den Footer noch benoetigt!
 
