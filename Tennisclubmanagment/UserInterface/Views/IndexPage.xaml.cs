@@ -57,7 +57,7 @@ namespace UserInterface.Views
         public void OnNavigateToRegistration(object sender, RoutedEventArgs e)
         {
             // TODO: zur Registrierungsseite anpassen
-            this.NavigationService.Navigate(new LoginPage());
+            this.NavigationService.Navigate(new RegistrationPage1());
         }
 
 

@@ -91,5 +91,24 @@ namespace UserInterface.ViewModels
             }
 
         }
+
+        private ViewModelCommand continueCommand;
+
+        public ICommand ContinueCommand
+        {
+            get
+            {
+                if (continueCommand == null)
+                {
+                    continueCommand = new ViewModelCommand(Continue);
+                }
+
+                return continueCommand;
+            }
+        }
+
+        private void Continue(object commandParameter)
+        {
+        }
     }
 }

@@ -4,6 +4,7 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:UserInterface.Views"
+      xmlns:customControl="clr-namespace:UserInterface.CustomControls"
       xmlns:viewModel="clr-namespace:UserInterface.ViewModels"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
@@ -22,11 +23,12 @@
         <!-- Kleinerer Text -->
         <Label Content="Herzlich Willkommen!" HorizontalAlignment="Center"/>
 
-        <!-- Uebersichtsbutton -->
+        <customControl:Index Margin="0,10,0,0"></customControl:Index>
+        <!-- Uebersichtsbutton --><!--
         <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
                 Foreground="White" 
                 Command="{Binding NavigateToOverviewCommand}">
-            <!-- Farbe setzen ohne und beim Hovern -->
+            --><!-- Farbe setzen ohne und beim Hovern --><!--
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#50723C"/>
@@ -37,7 +39,7 @@
                     </Style.Triggers>
                 </Style>
             </Button.Style>
-            <!-- Template fuer den Button, um Ecken abzurunden-->
+            --><!-- Template fuer den Button, um Ecken abzurunden--><!--
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border CornerRadius="5" Background="{TemplateBinding Background}">
@@ -47,10 +49,10 @@
             </Button.Template>
         </Button>
 
-        <!-- Loginbutton -->
+        --><!-- Loginbutton --><!--
         <Button x:Name="loginBtn" Content="Login" Margin="0,0,0,5" Height="30" Width="200"
                 Foreground="White" Command="{Binding NavigateToLoginCommand}">
-            <!-- Farbe setzen ohne und beim Hovern -->
+            --><!-- Farbe setzen ohne und beim Hovern --><!--
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#50723C"/>
@@ -61,7 +63,7 @@
                     </Style.Triggers>
                 </Style>
             </Button.Style>
-            <!-- Template fuer den Button, um Ecken abzurunden-->
+            --><!-- Template fuer den Button, um Ecken abzurunden--><!--
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border CornerRadius="5" Background="{TemplateBinding Background}">
@@ -71,10 +73,10 @@
             </Button.Template>
         </Button>
 
-        <!-- Registrierungsbutton -->
+        --><!-- Registrierungsbutton --><!--
         <Button x:Name="regisrierenBtn" Content="Registrieren" Height="30" Width="200"
                 Foreground="White" Command="{Binding NavigateToRegistrationCommand}">
-            <!-- Farbe setzen ohne und beim Hovern -->
+            --><!-- Farbe setzen ohne und beim Hovern --><!--
             <Button.Style>
                 <Style TargetType="Button">
                     <Setter Property="Background" Value="#50723C"/>
@@ -85,7 +87,7 @@
                     </Style.Triggers>
                 </Style>
             </Button.Style>
-            <!-- Template fuer den Button, um Ecken abzurunden-->
+            --><!-- Template fuer den Button, um Ecken abzurunden--><!--
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border CornerRadius="5" Background="{TemplateBinding Background}">
@@ -93,7 +95,7 @@
                     </Border>
                 </ControlTemplate>
             </Button.Template>
-        </Button>
+        </Button>-->
     </StackPanel>
 
 </Page>

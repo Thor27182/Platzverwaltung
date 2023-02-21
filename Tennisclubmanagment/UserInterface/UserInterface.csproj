@@ -62,12 +62,22 @@
     <Compile Include="CustomControls\CustomMainNavBar.xaml.cs">
       <DependentUpon>CustomMainNavBar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\CustomRegistrationForm3.xaml.cs">
+      <DependentUpon>CustomRegistrationForm3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomRegistrationForm2.xaml.cs">
+      <DependentUpon>CustomRegistrationForm2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\CustomRegistrationForm1.xaml.cs">
+      <DependentUpon>CustomRegistrationForm1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\Index.xaml.cs">
       <DependentUpon>Index.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\IndexViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\RegistrationViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\AGBPage.xaml.cs">
       <DependentUpon>AGBPage.xaml</DependentUpon>
@@ -87,6 +97,15 @@
     <Compile Include="Views\MainView.xaml.cs">
       <DependentUpon>MainView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\RegistrationPage3.xaml.cs">
+      <DependentUpon>RegistrationPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistrationPage2.xaml.cs">
+      <DependentUpon>RegistrationPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegistrationPage1.xaml.cs">
+      <DependentUpon>RegistrationPage1.xaml</DependentUpon>
+    </Compile>
     <Page Include="CustomControls\CustomFooter.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -99,17 +118,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="CustomControls\CustomRegistrationForm3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\CustomRegistrationForm2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CustomControls\CustomRegistrationForm1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CustomControls\Index.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="LoginPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -117,13 +140,6 @@
     </Compile>
     <Compile Include="CustomControls\CustomLoginForm.xaml.cs">
       <DependentUpon>CustomLoginForm.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="LoginPage.xaml.cs">
-      <DependentUpon>LoginPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
     </Compile>
     <Page Include="HomePage.xaml">
       <SubType>Designer</SubType>
@@ -154,6 +170,18 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegistrationPage3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RegistrationPage2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\RegistrationPage1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
