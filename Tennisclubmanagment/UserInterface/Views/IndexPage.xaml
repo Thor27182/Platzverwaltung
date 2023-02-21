@@ -23,7 +23,7 @@
         <!-- Kleinerer Text -->
         <Label Content="Herzlich Willkommen!" HorizontalAlignment="Center"/>
 
-        <customControl:Index Margin="0,10,0,0"></customControl:Index>
+        <customControl:Index Margin="0,10,0,0" OnButtonClicked="Index_OnButtonClicked" ></customControl:Index>
         <!-- Uebersichtsbutton --><!--
         <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
                 Foreground="White" 

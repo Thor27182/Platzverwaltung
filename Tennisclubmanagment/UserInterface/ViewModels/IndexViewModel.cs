@@ -50,12 +50,5 @@ namespace UserInterface.ViewModels
             //MessageBox.Show("Registration");
             NavigateToRegistration?.Invoke(this, new RoutedEventArgs());
         }
-
-        /*
-        public void OnNavigateToOverview(object sender, RoutedEventArgs e)
-        { 
-            NavigateToOverview?.Invoke(sender, e);
-        }
-        */
     }
 }

@@ -22,7 +22,7 @@
         
         <!-- Uebersichtsbutton -->
         <Button x:Name="uebersichtBtn" Content="Übersicht" Margin="0,70,0,5" Height="30" Width="200"
-                Foreground="White" Command="{Binding NavigateToOverviewCommand}">
+                Foreground="White" Click="Uebersicht_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -46,7 +46,7 @@
         
         <!-- Loginbutton -->
         <Button x:Name="loginBtn" Content="Login" Margin="0,0,0,5" Height="30" Width="200"
-                Foreground="White" Command="{Binding NavigateToLoginCommand}">
+                Foreground="White" Click="Login_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">
@@ -70,7 +70,7 @@
         
         <!-- Registrierungsbutton -->
         <Button x:Name="regisrierenBtn" Content="Registrieren" Height="30" Width="200"
-                Foreground="White" Command="{Binding NavigateToRegistrationCommand}">
+                Foreground="White" Click="Registrierung_Button_Click">
             <!-- Farbe setzen ohne und beim Hovern -->
             <Button.Style>
                 <Style TargetType="Button">

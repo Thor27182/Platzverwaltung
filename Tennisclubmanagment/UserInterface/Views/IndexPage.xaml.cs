@@ -49,7 +49,7 @@ namespace UserInterface.Views
             this.NavigationService.Navigate(new LoginPage());
         }
 
-        public void OnNavigateToLogin(object sender, RoutedEventArgs e) 
+        public void OnNavigateToLogin(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new LoginPage());
         }
@@ -60,27 +60,26 @@ namespace UserInterface.Views
             this.NavigationService.Navigate(new RegistrationPage1());
         }
 
-
-
-
-        /* alt, vorerst verworfen
-         * in XAML
-         <Page.CommandBindings>
-            <CommandBinding Command="NavigationCommands.GoToPage" Executed="GoToPageExecuteHandler"/>
-        </Page.CommandBindings>
-
-         * Bei Button:
-         <!-- Command="NavigationCommands.GoToPage"  CommandParameter="/Views/LoginPage.xaml" CommandTarget="{Binding ElementName=content}"-->
-
-
-        im CS:
-        private void GoToPage(object sender, ExecutedRoutedEventArgs e)
+        private void Index_OnButtonClicked(object sender, RoutedEventArgs e)
         {
-            this.NavigationService.Navigate(new Uri((string)e.Parameter, UriKind.Relative));
+            switch ((sender as Button).Name)
+            {
+                case "uebersichtBtn":
+                    OnNavigateToOverview(new HomePage(), e);
+                    break;
+                case "loginBtn":
+                    OnNavigateToLogin(new LoginPage(), e);
+                    break;
+                case "regisrierenBtn":
+                    OnNavigateToRegistration(new RegistrationPage(), e);
+                    break;
+                default:
+                    break;
+            }
         }
 
-        Ansatz nach: 
-        https://social.msdn.microsoft.com/Forums/vstudio/en-US/51d8e3ba-6bf9-4304-bb15-64a96e28159b/wpf-how-to-navigate-from-page-to-page-for-frame-in-code-behind?forum=wpf
-         */
+
+        //Ansatz nach: 
+        //https://social.msdn.microsoft.com/Forums/vstudio/en-US/51d8e3ba-6bf9-4304-bb15-64a96e28159b/wpf-how-to-navigate-from-page-to-page-for-frame-in-code-behind?forum=wpf
     }
 }

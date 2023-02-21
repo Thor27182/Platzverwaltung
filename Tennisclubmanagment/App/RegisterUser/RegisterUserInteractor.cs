@@ -26,5 +26,10 @@ namespace App.RegisterUser
         {
             RegisterUserRequestmodel requestmodel = new RegisterUserRequestmodel(username, password, firstName, middelNames, lastName, street, houseNo, postCode, city, iban);
         }
+
+        public void RegisterUser()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

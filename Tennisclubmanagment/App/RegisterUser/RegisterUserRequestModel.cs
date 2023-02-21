@@ -16,6 +16,7 @@ namespace App.RegisterUser
         public string Street { get; set; }
         public int HouseNo { get; set; }
         public string PostCode { get; set; }
+        public string City { get; set; }
         public string Iban { get; set;}
         
         public RegisterUserRequestmodel(

@@ -20,15 +20,14 @@ namespace UserInterface.Views
     /// </summary>
     public partial class MainView : Window
     {
-        public event EventHandler NavigateToOverview1;
 
         public MainView()
         {
             InitializeComponent();
 
-            if (content.Content is Index) {
-                (content.Content as Index).NavigateToOverview += NavigateToOverview1;
-            }
+            //if (content.Content is Index) {
+            //    (content.Content as Index).OnButtonClicked += ;
+            //}
 
         }
         #region Navigation
@@ -41,23 +40,10 @@ namespace UserInterface.Views
             content.Navigate(page);
         }
 
-        /*
-        private void GoToPage(object sender, ExecutedRoutedEventArgs e)
-        {
-            content.NavigationService.Navigate(new Uri((string)e.Parameter, UriKind.Relative));
-        }
-
-        private void CanGoToPage(object sender, CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = true;
-        }*/
-
-
-
         private void NavigateToOverview() 
         {
             // TODO: Anpassen zu einer OverviewPage
-            ChangeContent(new LoginPage());
+            ChangeContent(new HomePage());
         }
 
         private void NavigateToLogin()
@@ -68,25 +54,25 @@ namespace UserInterface.Views
         private void NavigateToRegistration()
         {
             // TODO: Anpassen zu einer RegistrationPage
-            ChangeContent(new LoginPage());
+            ChangeContent(new RegistrationPage());
         }
 
         private void NavigateToAGB()
         {
             // TODO: Anpassen zu einer AGBPage
-            ChangeContent(new LoginPage());
+            ChangeContent(new AGBPage());
         }
 
         private void NavigateToDatenschutz()
         {
             // TODO: Anpassen zu einer DatenschutzPage
-            ChangeContent(new LoginPage());
+            ChangeContent(new DatenschutzPage());
         }
 
         private void NavigateToImpressum()
         {
             // TODO: Anpassen zu einer ImpressumPage
-            ChangeContent(new LoginPage());
+            ChangeContent(new ImpressumPage());
         }
 
         // TODO: weitere Navigation zu den anderen Seiten
@@ -113,42 +99,6 @@ namespace UserInterface.Views
                     break;
             }
         }
-
-        /*
-        public void NavigateToContent(object sender, EventArgs e) 
-        {
-            ChangeContent(new LoginPage());
-        }
-
-
-        private void FrameContent_OnClicked(object sender, EventArgs e) 
-        {
-            switch ((sender as Button).Name)
-            {
-                case "uebersichtBtn":
-                    // TODO: anpassen 
-                    ChangeContent(new AGBPage());
-                    break;
-                case "loginBtn":
-                    ChangeContent(new LoginPage());
-                    break;
-                case "regisrierenBtn":
-                    // TODO: anpassen
-                    ChangeContent(new ImpressumPage());
-                    break;
-                default:
-                    break;
-            }
-        }
-        */
-
-
-
-
-        /*
-        private void ChangeFrameContent(string source) {
-            content.Source = new Uri(source, UriKind.Relative);
-        }*/
 
         #endregion
     }
