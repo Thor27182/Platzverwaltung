@@ -9,6 +9,7 @@
       Title="DatenschutzPage">
 
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- Inhalt anpassen -->
         <TextBlock Text="Datenschutz" FontSize="24"/>
     </Grid>
 </Page>

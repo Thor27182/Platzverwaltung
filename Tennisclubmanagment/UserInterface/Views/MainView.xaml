@@ -19,7 +19,6 @@
             </Grid.RowDefinitions>
             
             <!-- Navigation-Bar oben -->
-            <!-- TODO: Anpassung, fuer verschiene Zustaende Gast, GastÜbersicht-Tag/Woche, UserÜbersicht-Tag/Woche, User-Profil, usw. -->
             <customControl:CustomMainNavBar Grid.Row="0"/>
 
             <!-- Content in Frame zur Ausnutzer der Navigation, die Frame liefert (ohne wie Browser zu wirken)-->

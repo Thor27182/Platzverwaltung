@@ -9,18 +9,18 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using UserInterface.Commands;
+//using App.Utility.Hasher;
 
 namespace UserInterface.ViewModels
 {
     //public class LoginViewModel : ViewModelBase
     public class LoginViewModel
     {
-        // https://stackoverflow.com/questions/4181198/how-to-hash-a-password/73125177#73125177
-        // 
-
-
+        // Benutzername
         private string _username;
+        // Passwort
         private SecureString _password;
+        // Fehlermeldung
         private string _errorMessage;
 
         
@@ -40,6 +40,7 @@ namespace UserInterface.ViewModels
             {
                 _password = value;
                 //OnPropertyChanged(nameof(Password));
+                //_passwort = Hasher.Hash(value);
             }
         }
         public string ErrorMessage {
@@ -56,9 +57,15 @@ namespace UserInterface.ViewModels
         public LoginViewModel()
         {
             //userRepository = new UserRepository();
+            // LoginCommand Aktion mit Validierung
             LoginCommand = new ViewModelCommand(ExecuteLoginCommand, CanExecuteLoginCommand);
         }
 
+        /// <summary>
+        /// Methode zum Validieren der Login-Daten entsprechend Mindestlaengen
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
         private bool CanExecuteLoginCommand(object obj)
         {
             bool validData;
@@ -75,6 +82,10 @@ namespace UserInterface.ViewModels
             return validData;
         }
 
+        /// <summary>
+        /// Methode zum Durchfuehren des Logins
+        /// </summary>
+        /// <param name="obj"></param>
         private void ExecuteLoginCommand(object obj)
         {
             //var isValidUser = userRepository.AuthenticateUser(new NetworkCredential(Username, Password));

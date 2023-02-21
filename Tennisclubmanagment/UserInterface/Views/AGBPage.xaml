@@ -9,6 +9,7 @@
       Title="AGBPage">
 
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- TODO: Inhalt anpassen -->
         <TextBlock Text="AGBs" FontSize="24"/>
     </Grid>
 </Page>

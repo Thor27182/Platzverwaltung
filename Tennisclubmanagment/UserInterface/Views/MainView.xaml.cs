@@ -20,18 +20,15 @@ namespace UserInterface.Views
     /// </summary>
     public partial class MainView : Window
     {
-        public event EventHandler NavigateToOverview1;
 
         public MainView()
         {
             InitializeComponent();
 
-            if (content.Content is Index) {
-                (content.Content as Index).NavigateToOverview += NavigateToOverview1;
-            }
-
         }
         #region Navigation
+        // Die Methoden hier werden fuer den Footer noch benoetigt!
+
         /// <summary>
         /// Methode zum Aendern des Contents im Hauptbereich des Fensters - erstmal verworfen
         /// </summary>
@@ -41,19 +38,9 @@ namespace UserInterface.Views
             content.Navigate(page);
         }
 
-        /*
-        private void GoToPage(object sender, ExecutedRoutedEventArgs e)
-        {
-            content.NavigationService.Navigate(new Uri((string)e.Parameter, UriKind.Relative));
-        }
-
-        private void CanGoToPage(object sender, CanExecuteRoutedEventArgs e)
-        {
-            e.CanExecute = true;
-        }*/
-
-
-
+        /// <summary>
+        /// Methode zur Navigation zum
+        /// </summary>
         private void NavigateToOverview() 
         {
             // TODO: Anpassen zu einer OverviewPage
@@ -89,7 +76,6 @@ namespace UserInterface.Views
             ChangeContent(new LoginPage());
         }
 
-        // TODO: weitere Navigation zu den anderen Seiten
         // TODO: Beachtung des Rechte-/Rollenkonzepts bezüglich was angezeigt wird/ welche Seiten durch Navigation erreichbar
 
 
@@ -99,7 +85,6 @@ namespace UserInterface.Views
             {
                 case "agbBtn":
                     // TODO: Anpassen zur Anzeige der AGBs
-                    //ChangeFrameContent("/CustomControls/CustomLoginForm.xaml");
                     ChangeContent(new LoginPage());
                     //ChangeContent(new AGBPage());
                     break;
@@ -113,42 +98,6 @@ namespace UserInterface.Views
                     break;
             }
         }
-
-        /*
-        public void NavigateToContent(object sender, EventArgs e) 
-        {
-            ChangeContent(new LoginPage());
-        }
-
-
-        private void FrameContent_OnClicked(object sender, EventArgs e) 
-        {
-            switch ((sender as Button).Name)
-            {
-                case "uebersichtBtn":
-                    // TODO: anpassen 
-                    ChangeContent(new AGBPage());
-                    break;
-                case "loginBtn":
-                    ChangeContent(new LoginPage());
-                    break;
-                case "regisrierenBtn":
-                    // TODO: anpassen
-                    ChangeContent(new ImpressumPage());
-                    break;
-                default:
-                    break;
-            }
-        }
-        */
-
-
-
-
-        /*
-        private void ChangeFrameContent(string source) {
-            content.Source = new Uri(source, UriKind.Relative);
-        }*/
 
         #endregion
     }

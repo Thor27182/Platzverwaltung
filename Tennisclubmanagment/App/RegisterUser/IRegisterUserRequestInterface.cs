@@ -8,6 +8,6 @@ namespace App.RegisterUser
 {
     internal interface IRegisterUserRequestInterface
     {
-        void RegisterUser()
+        void RegisterUser();
     }
 }

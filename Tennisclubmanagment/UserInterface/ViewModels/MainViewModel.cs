@@ -9,7 +9,7 @@ namespace UserInterface.ViewModels
 {
     public class MainViewModel
     {
-        public ICommand XCommand { get; }
+        //public ICommand XCommand { get; }
 
 
     }

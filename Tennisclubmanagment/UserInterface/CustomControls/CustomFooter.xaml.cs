@@ -20,6 +20,7 @@ namespace UserInterface.CustomControls
     /// </summary>
     public partial class CustomFooter : UserControl
     {
+        // Eventhandler zum verbinden mit Uebergeordnetem Element
         public event EventHandler OnButtonClicked;
 
 
@@ -28,16 +29,34 @@ namespace UserInterface.CustomControls
             InitializeComponent();
         }
 
+        // Mehrere Methoden in derzeitiger Fassung unnoetig, da alle das gleiche tun
+        // TODO: Anpassen, wenn keine weiteren Aenderungen
+
+        /// <summary>
+        /// Methode zum Auslösen des Ereignisses zum Einleiten der Navigation
+        /// </summary>
+        /// <param name="sender">Auslöserelement</param>
+        /// <param name="e">Ereignisdaten</param>
         private void AGB_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
         }
 
+        /// <summary>
+        /// Methode zum Auslösen des Ereignisses zum Einleiten der Navigation
+        /// </summary>
+        /// <param name="sender">Auslöserelement</param>
+        /// <param name="e">Ereignisdaten</param>
         private void Datenschutz_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);
         }
 
+        /// <summary>
+        /// Methode zum Auslösen des Ereignisses zum Einleiten der Navigation
+        /// </summary>
+        /// <param name="sender">Auslöserelement</param>
+        /// <param name="e">Ereignisdaten</param>
         private void Impressum_Button_Click(object sender, RoutedEventArgs e)
         {
             OnButtonClicked?.Invoke(sender, e);

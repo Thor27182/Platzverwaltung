@@ -9,6 +9,7 @@
       Title="ImpressumPage">
 
     <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <!-- Inhalt anpassen -->
         <TextBlock Text="Impressum" FontSize="24"/>
     </Grid>
 </Page>
